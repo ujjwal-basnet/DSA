@@ -1,8 +1,3 @@
-#inorder to delete entire LL you need to set head and tail reference to None   , 
-# since the chin does have any reference poining as head or tail , garbage collector will delete all the elements 
-
-#checkout medium for more exampls 
-
 #create a node contaning next value 
 class  Node:
     def __init__(self , value  = None ):
@@ -49,17 +44,30 @@ class SLinkedList:
                 newNode.next = nextNode 
                 if tempNode == self.tail :
                     self.tail = newNode 
-
-
-
-#deleting code 
-    def delete(self ) :
-        if self.head == None :
-            return "SLl doesnt exist "
-        else : 
-            self.head = None 
-            self.tail = None 
+    #starts from here 
+    
+    def search(self , value) :
+        
+        
+        node = self.head 
+        if node == None :
+            print("No node  ")
             
+        else :
+           
+            while node is not None :
+                
+                if node.value == value :
+                    print("found")
+                
+                node = node.next
+            return "Values is not in the list"
+                
+            
+        
+            
+
+
 #creating likend list 
 singlyLinkedList  = SLinkedList()
 
@@ -69,19 +77,6 @@ singlyLinkedList.insertSLL(2 , 1)
 singlyLinkedList.insertSLL(23 , 1)
 singlyLinkedList.insertSLL(23 , 1)
 
-
-
 print([node.value for node in singlyLinkedList])
+singlyLinkedList.search(10)
 
-singlyLinkedList.insertSLL(3 , -1 )
-
-print([node.value for node in singlyLinkedList])
-
-singlyLinkedList.insertSLL(4 , 2)
-
-print([node.value for node in singlyLinkedList])
-
-                    
-                    
-singlyLinkedList.delete()
-print([node.value for node in singlyLinkedList])

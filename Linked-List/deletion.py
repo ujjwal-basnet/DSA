@@ -17,7 +17,7 @@ class SLikedList:
             yield node 
             node = node.next 
             
-    
+            
     def insertLL(self , value , location):
         newNode = Node(value)
         if self.head == None :
@@ -74,24 +74,38 @@ class SLikedList:
                     while node is not None : 
                         if node.next == self.tail:
                             break
-                        
-                        node = node.next 
                     node.next = None 
                     self.tail = node 
-                        
-                        
-                        
-                        
+            
+            else :
+                tempNode = self.head
+                index = 0 
+                while index < location -1 :
+                    tempNode = tempNode.next 
+                    index = index  + 1 
                 
-                    
+                nextNode = tempNode.next 
+                tempNode.next = nextNode.next
+                
+#creation 
 
-                 
-                
-                
-                
-        
-        
-        
-            
-            
-        
+singlyLinkedList  = SLikedList()
+
+
+singlyLinkedList.insertLL(10 , 0 )
+singlyLinkedList.insertLL(2 , 1)
+singlyLinkedList.insertLL(23 , 1)
+singlyLinkedList.insertLL(23 , 1)
+
+
+
+print([node.value for node in singlyLinkedList])
+
+singlyLinkedList.insertLL(3 , -1 )
+
+print([node.value for node in singlyLinkedList])
+
+singlyLinkedList.insertLL(4 , 2)
+
+print([node.value for node in singlyLinkedList])
+
