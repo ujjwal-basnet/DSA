@@ -1,0 +1,21 @@
+
+
+we are not goint to use first index of the list that is [0] index , in order to 
+make math-matical calculation easy 
+
+
+list will be like 
+1 ,2 ,3 ,... ignoring 0  or not using 0
+
+
+left child = cell[2x]
+right child = cell[2x + 1 ]
+-------------------------------------------------------------------------------
+
+
+in pre-order traversal 
+we will visit first root note then left node  node and then right node , 
+
+
+but in In-order travesal node 
+we will visit  ,  left subtree , root node , right subtree 

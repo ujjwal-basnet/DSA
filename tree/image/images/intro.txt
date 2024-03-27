@@ -1,0 +1,13 @@
+root : top node without parent 
+edge : link betwwen parent and child 
+
+lead : a node which doesnot have children 
+sibling   , chinfren of same parent 
+
+ancestoror , parent grandparent and great gradparent of a node 
+depth of node = a lenght of the path from root to that node
+
+height of node = a lenght of the path from the node to deepest node 
+
+depth of the tree = depth of root node 
+height of the tree = height of root node 
