@@ -1,0 +1,3 @@
+stack  works as last in first out 
+ an real life example will be  , forward and backward button on web-browser 
+ 
