@@ -45,17 +45,25 @@ class Queue:
             self.linkedList.tail= newNode 
         
 
+    def dequee(self):
+        if self.linkedList.head is not None :
+            value = self.linkedList.head 
+            self.linkedList.head = self.linkedList.head.next 
+            return value 
+
+
         
 customQUeue = Queue()
 print(customQUeue.enqueue(3))
 print(customQUeue.enqueue(4))
 print(customQUeue.enqueue(5))
 print(customQUeue)
-            
-        
-
+print(customQUeue.dequee())
 print(customQUeue)
         
+
+
+
         
         
         
