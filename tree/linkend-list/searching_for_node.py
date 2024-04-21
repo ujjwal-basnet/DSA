@@ -19,7 +19,7 @@ def Searching_Node(rootNode, Nodevalue):
         if root.data == Nodevalue:  # Checking current node's value
             return "success"  # Correcting string
 
-        if root.leftchild is not None:
+        if root.leftchild is not None: 
             customQueue.put(root.leftchild)  # Enqueueing left child
 
         if root.rightchild is not None:
@@ -44,3 +44,5 @@ root.rightchild.leftchild = TreeNode(data='N6')
 root.rightchild.rightchild = TreeNode(data='N7')
 
 print(Searching_Node(rootNode=root, Nodevalue='N9')) 
+
+print(Searching_Node(rootNode=root , Nodevalue= 'N11'))
