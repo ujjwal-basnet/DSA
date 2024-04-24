@@ -17,7 +17,7 @@ newBT.rightChild = rightChild
 
 def  postOrderTraversal(rootNode):
     if not rootNode:
-        return 
+        return "Empyty"
     
     postOrderTraversal(rootNode.leftChild)
     postOrderTraversal(rootNode.rightChild)
