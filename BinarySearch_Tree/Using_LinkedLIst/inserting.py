@@ -37,3 +37,4 @@ print(newBst.data)
 
 print(InsertNode(newBst , 45))
 print(newBst.LeftChild)
+

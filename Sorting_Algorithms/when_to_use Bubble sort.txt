@@ -1,0 +1,7 @@
+- when input is already soorted 
+space is concern 
+easy to implement 
+
+
+# when to avoid bubble sort ?
+Average time compplexity is poor

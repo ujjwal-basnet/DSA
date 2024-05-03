@@ -1,0 +1,7 @@
+
+1) When we have insuffient memory 
+2) Easy to implement
+
+
+when to avoid selection sort 
+when time is concern

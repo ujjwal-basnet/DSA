@@ -1,0 +1,21 @@
+
+
+# give collusion can be solve by two ways 
+"""
+1) direct channing  
+
+second is 2) Open Adddressing which includes 
+                - linear probing 
+                - quadratic probing
+                - Double hashing
+
+"""
+""" Direct chaning 
+:implements the buckets as lineknd list , colliding elements are stored in this list 
+
+
+[ refer to image direct channing .png ]
+open Adressing   : colliding elemts are stor in other vackents buckets. DUring storage and
+lookup these are found through so called probing 
+
+    linear probing : it palces new key into closet following empty cell 
